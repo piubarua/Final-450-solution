@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//code to reverse array
 string reverseWord(string str){
     
   //Your code here
