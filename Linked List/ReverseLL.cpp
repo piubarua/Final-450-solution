@@ -26,6 +26,11 @@ Constraints:
 
 #include<bits/stdc++.h>
 using namespace std;
+struct Node
+{
+    int data;
+    struct Node *next;
+};
 
 class Solution
 {
@@ -35,7 +40,7 @@ class Solution
     {
         // code here
         // return head of reversed list
-        Node *curr=head;
+        Node* curr=head;
         Node* prev=NULL;
         Node* next=NULL;
         while(curr!=NULL)
