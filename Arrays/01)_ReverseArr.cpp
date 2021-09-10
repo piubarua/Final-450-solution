@@ -3,12 +3,12 @@ using namespace std;
 
 string reverseStr(string s)
 {
-  int low=0;
-  int high=s.size()-1;
-  while(low<high){
-    swap(s[low],s[high]);
-    low++;
-    high--;
+  int n=s.length();
+  for(int i=0;i<n/2;i++)
+  {
+    char temp*=s[i];
+    s[i]=s[n-1-i];
+    s[n-1-i]=temp;
   }
   return s;
 }
